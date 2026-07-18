@@ -92,3 +92,21 @@ Características implementadas
 ✅ Perfil de usuario
 
 ✅ Contraseñas encriptadas con BCrypt
+
+---------------------------------------------------------------------------------------------------------------------
+Configuración
+
+El proyecto utiliza un archivo local de configuración que no se incluye en el repositorio.
+
+1. En el archivo application.properties
+Completar los siguientes valores:
+
+- `omdb.api.key`: API Key de OMDb.
+- `spring.datasource.username`: usuario de MySQL.
+- `spring.datasource.password`: contraseña de MySQL.
+- `security.jwt.secret`: clave secreta para JWT.
+
+2. Crear la base de datos:
+
+```sql
+CREATE DATABASE peliculas_db;
