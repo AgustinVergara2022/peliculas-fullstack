@@ -96,17 +96,15 @@ Características implementadas
 ---------------------------------------------------------------------------------------------------------------------
 Configuración
 
-El proyecto utiliza un archivo local de configuración que no se incluye en el repositorio.
+El proyecto utiliza un archivo local de configuración que no se incluye en el repositorio por motivos de seguridad.
 
-1. En el archivo application.properties
-Completar los siguientes valores:
-
-- `omdb.api.key`: API Key de OMDb.
-- `spring.datasource.username`: usuario de MySQL.
-- `spring.datasource.password`: contraseña de MySQL.
-- `security.jwt.secret`: clave secreta para JWT.
-
-2. Crear la base de datos:
-
-```sql
+Copiar el archivo application-local.properties.example.
+Renombrarlo a application-local.properties.
+Completar los valores correspondientes:
+API Key de OMDb.
+Usuario y contraseña de MySQL.
+Clave secreta para JWT.
+Crear la base de datos:
 CREATE DATABASE peliculas_db;
+
+Una vez configurado el archivo, el backend estará listo para ejecutarse.
